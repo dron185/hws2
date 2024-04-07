@@ -1,18 +1,20 @@
 .sendForm {
-
+    display: flex;
+    gap: 44px;
 }
 
 .textarea {
-
+    flex-grow: 1;
 }
 
 .button {
-
+    min-height: 40px;
 }
 
 .button:hover {
 
 }
+
 .button:active {
 
 }
