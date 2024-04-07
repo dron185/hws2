@@ -56,7 +56,7 @@ export const friendMessage0: MessageType = {
 
 const HW1 = () => {
     return (
-        <div id={'hw1'} className={s2.wrapper}>
+        <div id={'hw1'} style={{padding: "32px 0 32px"}}>
             <div className={s2.hwTitle}>Homework #1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}

@@ -1,5 +1,8 @@
 .App {
     --header_height: 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .hw {
@@ -17,9 +20,7 @@
 }
 
 .wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 131px 70px;
+
 }
 
 .container {
