@@ -20,7 +20,7 @@ export const Layout: FC<PropsType> = ({ children }) => {
         <>
             <Sidebar open={open} handleClose={handleClose} />
             <Header handleOpen={handleOpen} />
-            <div style={{padding: "0 70px"}}>
+            <div >
                 {/*страницы*/}
                 {children}
             </div>

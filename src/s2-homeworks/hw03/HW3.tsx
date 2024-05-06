@@ -40,7 +40,7 @@ const HW3 = () => {
 
     return (
         <div id={'hw3'} className={s2.hw3}>
-            <div className={s2.hwTitle}>Homework #3</div>
+            <div className={s2.hwTitle} style={{marginBottom: "31px"}}>Homework #3</div>
             {/*для автоматической проверки дз (не менять)*/}
 
             <div className={s2.hw}>

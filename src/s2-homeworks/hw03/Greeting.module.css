@@ -8,6 +8,8 @@
 
 .inputAndButtonContainer {
     max-width: 462px;
+    margin-bottom: 22px;
+    height: 36px;
     display: flex;
     gap: 12px;
 }

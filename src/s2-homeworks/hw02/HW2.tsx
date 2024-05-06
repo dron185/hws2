@@ -55,8 +55,8 @@ function HW2() {
     }
 
     return (
-        <div id={'hw2'} style={{padding: "37px 0 134px"}}>
-            <div className={s2.hwTitle}>Homework #2</div>
+        <div id={'hw2'} className={s2.hw2}>
+            <div className={s2.hwTitle} style={{marginBottom: "33px"}}>Homework #2</div>
             <div className={s2.hw}>
                 <Affairs
                     data={filteredAffairs}

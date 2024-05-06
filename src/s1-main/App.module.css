@@ -3,7 +3,7 @@
 }
 
 .hw {
-
+    padding: 0 70px;
 }
 
 .hwTitle {
@@ -13,7 +13,9 @@
     line-height: 27px;
     letter-spacing: 0;
     text-align: left;
-    margin-bottom: 34px;
+    /*margin-bottom: 34px;*/
+    padding: 0 70px 9px;
+    border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .wrapper {
@@ -23,12 +25,29 @@
 .container {
     padding: 0 70px;
 }
+.hw1 {
+    padding: 47px 0 32px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.hw2 {
+    padding: 39px 0 73px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
 
 .hw3 {
-    padding-bottom: 243px;
+    padding: 35px 0 182px;
+    border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .hw4 {
-    padding-bottom: 55px;
+    padding: 36px 0 55px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+
+.hw6 {
+    padding: 71px 0 230px;
+    border-bottom: 1px solid rgb(217, 217, 217);
 }
 
