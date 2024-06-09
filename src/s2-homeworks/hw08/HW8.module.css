@@ -1,23 +1,42 @@
 .item {
+
 }
 
 .item:last-of-type {
+
 }
 
 .users {
+
 }
 
 .buttonsContainer {
+    display: flex;
+    gap: 12px;
+    padding: 33.5px 0 18px 307px;
 }
 
 .container {
 }
 
 .thead {
+    background-color: rgb(229, 229, 229);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .nameCol {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0;
 }
 
 .ageCol {
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-size: 14px;*/
+    /*font-weight: 500;*/
+    /*line-height: 16px;*/
 }
