@@ -7,7 +7,7 @@
 }
 
 .users {
-
+    width: 606px;
 }
 
 .buttonsContainer {
@@ -24,6 +24,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    line-height: 36px;
 }
 
 .nameCol {
