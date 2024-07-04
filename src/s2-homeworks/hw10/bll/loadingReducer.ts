@@ -26,3 +26,4 @@ export const loadingAC = (isLoading: boolean): LoadingActionType => ({
 type initStateType = {
     isLoading: boolean
 }
+

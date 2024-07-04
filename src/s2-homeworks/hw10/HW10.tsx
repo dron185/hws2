@@ -15,18 +15,22 @@ import {Loader} from './Loader'
 
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
-
-    const isLoading = false
+    const isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
+    const dispatch = useDispatch()
+    //const isLoading = false
 
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
-
+        dispatch(loadingAC(true))
         // setTimeout
+        setTimeout(() => {
+            dispatch(loadingAC(false))
+        }, 1500)
     }
 
     return (
         <div id={'hw10'}>
-            <div className={s2.hwTitle}>Homework #10</div>
+            <div className={s2.hwTitle} style={{marginBottom: '43px'}}>Homework #10</div>
 
             <div className={s2.hw}>
                 {isLoading ? (
@@ -47,3 +51,5 @@ const HW10 = () => {
 }
 
 export default HW10
+
+
