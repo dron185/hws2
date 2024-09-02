@@ -39,6 +39,12 @@ const HW14 = () => {
                 // сохранить пришедшие данные
 
                 //
+
+                if(res && res.data) {
+                    setTechs(res.data.techs);
+                    setLoading(false)
+                }
+
             })
     }
 
@@ -48,11 +54,12 @@ const HW14 = () => {
 
         // добавить/заменить значение в квери урла
         // setSearchParams(
-
         //
+        setSearchParams(value)
     }
 
     useEffect(() => {
+        console.log(searchParams)
         const params = Object.fromEntries(searchParams)
         sendQuery(params.find || '')
         setFind(params.find || '')
@@ -70,6 +77,7 @@ const HW14 = () => {
 
             <div className={s2.hw}>
                 <SuperDebouncedInput
+                    className={s.input}
                     id={'hw14-super-debounced-input'}
                     value={find}
                     onChangeText={onChangeText}
@@ -87,3 +95,5 @@ const HW14 = () => {
 }
 
 export default HW14
+
+

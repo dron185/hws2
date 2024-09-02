@@ -1,7 +1,31 @@
 .tech {
-
+    line-height: 24px;
 }
 
 .loading {
+    position: absolute;
+    width: 47px;
+    height: 16px;
+    left: 489px;
 
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
 }
+
+.input {
+    width: 468px;
+    height: 36px;
+    margin: 22px 0 11px 0;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.input:focus {
+    border: 1px solid rgb(0, 102, 204);
+    outline: none;
+}
+/*outline: none Это тоже типа Border, только не влияет на геометрию. Поверх Border, вот и не видно*/
