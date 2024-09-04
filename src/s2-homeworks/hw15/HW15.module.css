@@ -16,10 +16,29 @@
 
 .row {
     display: flex;
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 0 12px 17px;
+}
+
+.row:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .rowHeader {
     display: flex;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 11px 0 9px 17px;
+    background: rgb(229, 229, 229);
+
+    /*gap: 236px;*/
+    /*width: 606px;*/
 }
 
 .loading {

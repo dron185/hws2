@@ -30,7 +30,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         <div className={s.pagination}>
             <Pagination
                 id={id + '-pagination'}
-                sx={{
+                sx={{ marginRight: '24px'
                     // стили для Pagination // пишет студент
                 }}
                 page={page}
@@ -53,6 +53,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                     {id: 10, value: 10},
                 ]}
                 onChange={onChangeSelect}
+                style={{padding: '4px 0px 4px 6px', border: '1px solid rgb(236, 235, 235)', fontFamily: 'Roboto'}}
             />
 
             <span className={s.text2}>
