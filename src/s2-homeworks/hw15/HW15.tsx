@@ -5,6 +5,7 @@ import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
+import CircularProgress from "@mui/material/CircularProgress";
 
 /*
 * 1 - дописать SuperPagination
@@ -46,7 +47,6 @@ const HW15 = () => {
     const [totalCount, setTotalCount] = useState(100)
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<TechType[]>([])
-
     const sendQuery = (params: any) => {
         setLoading(true)
         getTechs(params)
@@ -54,13 +54,11 @@ const HW15 = () => {
                 // делает студент
 
                 // сохранить пришедшие данные
-                console.log(res)
                 if(res) {
                     setTotalCount(res.data.totalCount)
                     setTechs(res.data.techs)
                     setLoading(false)
                 }
-
                 //
             })
     }
@@ -69,11 +67,13 @@ const HW15 = () => {
         // делает студент
 
         // setPage(
+        setPage(newPage)
         // setCount(
-
+        setCount(newCount)
         // sendQuery(
+        sendQuery({page: newPage, count: newCount})
         // setSearchParams(
-
+        setSearchParams({page: newPage.toString(), count: newCount.toString()})
         //
     }
 
@@ -81,11 +81,13 @@ const HW15 = () => {
         // делает студент
 
         // setSort(
+        setSort(newSort)
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        setPage(1)
         // sendQuery(
+        sendQuery({sort: newSort, page: 1, count})
         // setSearchParams(
-
+        setSearchParams({sort: newSort, page: '1', count: count.toString()})
         //
     }
 
@@ -113,7 +115,10 @@ const HW15 = () => {
             <div className={s2.hwTitle}>Homework #15</div>
 
             <div className={s2.hw}>
-                {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
+                {idLoading && <div id={'hw15-loading'} className={s.loading}>
+                    <CircularProgress color='secondary' size={90}/>
+                    {/*Loading...*/}
+                </div>}
 
                 <SuperPagination
                     page={page}
@@ -123,7 +128,7 @@ const HW15 = () => {
                 />
 
                 <div className={s.rowHeader}>
-                    <div className={s.techHeader}>
+                    <div className={s.techHeader} style={{display: 'flex'}}>
                         tech
                         <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
                     </div>
@@ -141,3 +146,5 @@ const HW15 = () => {
 }
 
 export default HW15
+
+
